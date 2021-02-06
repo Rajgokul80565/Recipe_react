@@ -31,6 +31,7 @@ const getrecipes = async () =>{
   const response = await fetch(url);
   const data = await response.json();
   setRecipes(data.hits);
+  console.log(data.hits);
 
 }
 
@@ -48,6 +49,7 @@ const getrecipes = async () =>{
           title = {recipe.recipe.label}
           steps = {recipe.recipe.ingredientLines}
           calories = {recipe.recipe.calories}
+          images = {recipe.recipe.image}
         />
      ))}
 
