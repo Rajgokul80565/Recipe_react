@@ -1,14 +1,15 @@
 import React from 'react';
+import style from '../recipes.module.css';
 
 
 function Card({title,ingredients,calories,images}){
     return(
 
-        <div className = 'Card'>
-            <h1 className = 'title'>{title}</h1>
-            <img src={images} alt=""/>
+        <div className = {style.recipe}>
+            <h1 className = {style.title}>{title}</h1>
+            <img className ={style.img} src={images} alt=""/>
             {ingredients.map( ingre=>(
-              <h6>{ingre.text}</h6>
+              <p className ={style.content}>{ingre.text}</p>
              ))}
           
             <h5 className = 'calories'>{calories}</h5>

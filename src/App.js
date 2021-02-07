@@ -54,15 +54,17 @@ const getrecipes = async () =>{
 
   return (
     <div className="App">
-     <form onSubmit = {getSearch} >
-       <h2>Enter you Keywords</h2>
+     
+     <form className ='search-form' onSubmit = {getSearch} >
        <input
+       className = 'search-bar'
         type="text"
          value={search}
          onChange = {updateSearch} 
         />
-       <button  type='submit' >search</button>
+       <button className = 'search-btn' type='submit' >search</button>
      </form>
+     <div className = 'recipes-card'>
      {recipes.map(recipe => (
         <Card 
           key={recipe.recipe.label}
@@ -72,6 +74,7 @@ const getrecipes = async () =>{
           images = {recipe.recipe.image}
         />
      ))}
+     </div>
      
     </div>
   );
