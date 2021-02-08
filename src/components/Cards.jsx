@@ -2,7 +2,7 @@ import React from 'react';
 import style from '../recipes.module.css';
 
 
-function Card({title,ingredients,calories,images}){
+function Card({title,ingredients,images}){
     return(
 
         <div className = {style.recipe}>
@@ -12,7 +12,7 @@ function Card({title,ingredients,calories,images}){
               <p className ={style.content}>{ingre.text}</p>
              ))}
           
-            <h5 className = 'calories'>{calories}</h5>
+            
         </div>
 
 

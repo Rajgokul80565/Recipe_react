@@ -70,7 +70,6 @@ const getrecipes = async () =>{
           key={recipe.recipe.label}
           title = {recipe.recipe.label}
           ingredients = {recipe.recipe.ingredients}
-          calories = {recipe.recipe.calories}
           images = {recipe.recipe.image}
         />
      ))}
