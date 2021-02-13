@@ -1,6 +1,7 @@
 import React from 'react';
-import foodImage from '../images/food.svg';
 import styles from '../css/header.module.css';
+import foodImage from '../images/food.svg';
+
 
 function Header(){
     return (
@@ -8,15 +9,14 @@ function Header(){
      <div className = {styles.foodImg}>
          <img src={foodImage} alt="Food Illustration image"/>
      </div>
-        <div>
-            <h1>Finger tip recipe for you</h1>
-            <h5>Millions of Food recipes</h5>
-            <p>In</p>
-            <h5>Place</h5>
+        <div className = {styles.introLines}>
+            <h1>Rain or shine, it's time to <span className = {styles.wordColor}>Dine</span>.</h1>
+            <button className = {styles.btn}> Get Started </button>
         </div>
 
     </header>
     )
 }
 
+            //<h2 className = {styles.wordColor}></h2>
 export default Header;
