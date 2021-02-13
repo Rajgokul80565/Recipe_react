@@ -2,6 +2,8 @@
 import './App.css';
 import {useEffect,useState} from 'react';
 import Card from './components/Cards';
+import Navbar from './components/nav';
+import Header from './components/header';
 
 
 
@@ -54,6 +56,8 @@ const getrecipes = async () =>{
 
   return (
     <div className="App">
+    <Navbar />
+    <Header />
      
      <form className ='search-form' onSubmit = {getSearch} >
        <input
