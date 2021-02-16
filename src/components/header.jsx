@@ -10,7 +10,9 @@ function Header(){
          <img src={foodImage} alt="Food Illustration image"/>
      </div>
         <div className = {styles.introLines}>
-            <h1>Rain or shine, it's time to <span className = {styles.wordColor}>Dine</span>.</h1>
+            <h1>Taste the Best that <span className = {styles.wordColor}> Surprise</span> you.</h1>
+            <h1>Get the Most Popular Recipes</h1>
+            
             <button className = {styles.btn}> Get Started </button>
         </div>
 

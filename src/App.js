@@ -62,6 +62,7 @@ const getrecipes = async () =>{
      <form className ='search-form' onSubmit = {getSearch} >
        <input
        className = 'search-bar'
+       placeholder='5 request per minute'
         type="text"
          value={search}
          onChange = {updateSearch} 
