@@ -58,6 +58,10 @@
     border-radius: 20px;
     background-color:#f35c70;
 }
+.btn a {
+    text-decoration: none;
+    color: black;
+}
 .btn:hover{
     background-color:rgb(252, 173, 173);
 }

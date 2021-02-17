@@ -13,7 +13,7 @@ function Header(){
             <h1>Taste the Best that <span className = {styles.wordColor}> Surprise</span> you.</h1>
             <h1>Get the Most Popular Recipes</h1>
             
-            <button className = {styles.btn}> Get Started </button>
+            <button className = {styles.btn}> <a href=""> Get Started</a>  </button>
         </div>
 
     </header>
