@@ -4,8 +4,9 @@ import {useEffect,useState} from 'react';
 import Card from './components/Cards';
 import Navbar from './components/nav';
 import Header from './components/header';
-
-
+import {BrowserRouter as Router, Switch,Route}  from 'react-router-dom';
+import Contact from './components/contact';
+import About from './components/About';
 
 
 
@@ -48,17 +49,12 @@ const getrecipes = async () =>{
   const response = await fetch(url);
   const data = await response.json();
   setRecipes(data.hits);
-  console.log(data.hits);
-
 }
 
-
-
-  return (
-    <div className="App">
-    <Navbar />
-    <Header />
-     
+function Home(){
+  return(
+    <div> 
+<Header />
      <form className ='search-form' onSubmit = {getSearch} >
        <input
        className = 'search-bar'
@@ -79,9 +75,32 @@ const getrecipes = async () =>{
         />
      ))}
      </div>
-     
-    </div>
+     </div>
+  )
+}
+
+
+
+  return (
+    <Router>
+    <div className="App">
+    
+    <Navbar />
+    <Switch>
+    <Route path= "/" exact component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/contacts" component={Contact} />
+    </Switch>
+    
+    
+    
+     </div>
+    </Router> 
   );
 }
+
+
+
+
 
 export default App;

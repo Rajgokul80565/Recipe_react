@@ -1,0 +1,42 @@
+.about-page{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title{
+    color: white;
+}
+
+.about-page img{
+    width:200px;
+    height: 200px;
+}
+#Avatar{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 30px;
+
+}
+
+.about-page .icons{
+   width: 30px;
+   height:30px;
+   margin-left: 20px;
+   cursor: pointer;
+   transition:0.4s  ease-out  all ;
+}
+
+.icons:hover{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 767px) {
+    .about-page{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+  }
