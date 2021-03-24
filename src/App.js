@@ -58,7 +58,7 @@ function Home(){
      <form className ='search-form' onSubmit = {getSearch} >
        <input
        className = 'search-bar'
-       placeholder='5 request per minute'
+       placeholder='keywords( pizza, milkshake... )'
         type="text"
          value={search}
          onChange = {updateSearch} 
